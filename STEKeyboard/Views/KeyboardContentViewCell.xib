@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="sW2-6G-B6t" customClass="KeyboardContentViewCell" customModule="STEKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="834" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sW2-6G-B6t" id="cQZ-Gp-dDT">
+                <rect key="frame" x="0.0" y="0.0" width="834" height="157"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-fD-FlR">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="157"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="250" id="hdz-DJ-1QT"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="3" left="3" bottom="3" right="3"/>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6WF-JM-3bv">
+                        <rect key="frame" x="0.0" y="0.0" width="759" height="157"/>
+                        <edgeInsets key="layoutMargins" top="3" left="3" bottom="3" right="3"/>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-Gw-3yP">
+                        <rect key="frame" x="829" y="0.0" width="0.0" height="157"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="250" constant="75" id="KN0-Bh-zpE"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="3" left="3" bottom="3" right="3"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="QbK-fD-FlR" secondAttribute="bottom" id="3Zl-Wd-eZ9"/>
+                    <constraint firstItem="6WF-JM-3bv" firstAttribute="leading" secondItem="QbK-fD-FlR" secondAttribute="trailing" id="5Fd-cj-MiS"/>
+                    <constraint firstItem="QbK-fD-FlR" firstAttribute="leading" secondItem="cQZ-Gp-dDT" secondAttribute="leading" id="AJq-6g-h8J"/>
+                    <constraint firstItem="aEi-Gw-3yP" firstAttribute="leading" secondItem="6WF-JM-3bv" secondAttribute="trailing" id="GSU-7o-qYb"/>
+                    <constraint firstAttribute="bottom" secondItem="6WF-JM-3bv" secondAttribute="bottom" id="ONi-Y8-rCO"/>
+                    <constraint firstItem="QbK-fD-FlR" firstAttribute="top" secondItem="cQZ-Gp-dDT" secondAttribute="top" id="R0x-Rz-1dQ"/>
+                    <constraint firstAttribute="bottom" secondItem="aEi-Gw-3yP" secondAttribute="bottom" id="g0t-zS-mwp"/>
+                    <constraint firstItem="aEi-Gw-3yP" firstAttribute="top" secondItem="cQZ-Gp-dDT" secondAttribute="top" id="kSr-MG-ur2"/>
+                    <constraint firstAttribute="trailing" secondItem="aEi-Gw-3yP" secondAttribute="trailing" id="lzh-k5-iI4"/>
+                    <constraint firstItem="6WF-JM-3bv" firstAttribute="top" secondItem="cQZ-Gp-dDT" secondAttribute="top" id="tji-kE-Gpi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="KeyboardBackgroundColor"/>
+            <connections>
+                <outlet property="centerStackView" destination="6WF-JM-3bv" id="Og9-Yx-Fdh"/>
+                <outlet property="leadingStackView" destination="QbK-fD-FlR" id="mAF-2G-AjZ"/>
+                <outlet property="trailingStackView" destination="aEi-Gw-3yP" id="Ex1-9e-n6t"/>
+            </connections>
+            <point key="canvasLocation" x="-684.05797101449275" y="-247.43303571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="KeyboardBackgroundColor">
+            <color red="0.83921568627450982" green="0.84705882352941175" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
